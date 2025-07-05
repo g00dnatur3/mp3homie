@@ -1,0 +1,80 @@
+export const Cookies = [
+  {
+    "name": "PREF",
+    "value": "tz=America.El_Salvador&f6=40000000&f7=100",
+    "domain": ".youtube.com",
+    "path": "/",
+    "expires": 1761800358.51683,
+    "size": 45,
+    "httpOnly": false,
+    "secure": true,
+    "session": false,
+    "priority": "Medium",
+    "sameParty": false,
+    "sourceScheme": "Secure"
+  },
+  {
+    "name": "VISITOR_PRIVACY_METADATA",
+    "value": "CgJTVhIEGgAgQw%3D%3D",
+    "domain": ".youtube.com",
+    "path": "/",
+    "expires": 1742792353.047808,
+    "size": 44,
+    "httpOnly": true,
+    "secure": true,
+    "session": false,
+    "sameSite": "None",
+    "priority": "Medium",
+    "sameParty": false,
+    "sourceScheme": "Secure",
+    "partitionKey": "https://youtube.com"
+  },
+  {
+    "name": "VISITOR_INFO1_LIVE",
+    "value": "UuQTm8q43eQ",
+    "domain": ".youtube.com",
+    "path": "/",
+    "expires": 1742792353.047652,
+    "size": 29,
+    "httpOnly": true,
+    "secure": true,
+    "session": false,
+    "sameSite": "None",
+    "priority": "Medium",
+    "sameParty": false,
+    "sourceScheme": "Secure",
+    "partitionKey": "https://youtube.com"
+  },
+  {
+    "name": "YSC",
+    "value": "l1eJ85uBs24",
+    "domain": ".youtube.com",
+    "path": "/",
+    "expires": -1,
+    "size": 14,
+    "httpOnly": true,
+    "secure": true,
+    "session": true,
+    "sameSite": "None",
+    "priority": "Medium",
+    "sameParty": false,
+    "sourceScheme": "Secure",
+    "partitionKey": "https://youtube.com"
+  },
+  {
+    "name": "GPS",
+    "value": "1",
+    "domain": ".youtube.com",
+    "path": "/",
+    "expires": 1727242153.046476,
+    "size": 4,
+    "httpOnly": true,
+    "secure": true,
+    "session": false,
+    "priority": "Medium",
+    "sameParty": false,
+    "sourceScheme": "Secure"
+  }
+]
+
+export default Cookies

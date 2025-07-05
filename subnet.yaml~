@@ -1,0 +1,15 @@
+---
+subnet: 96.43.130.16/29
+total_hosts: 8
+total_usable_hosts: 6
+usable_ips:
+	- 96.43.130.17
+	- 96.43.130.18
+	- 96.43.130.19
+	- 96.43.130.20
+	- 96.43.130.21
+	- 96.43.130.22
+broadcast_ip: 96.43.130.23
+gateway_ip: 96.43.130.17
+subnet_mask: 255.255.255.248
+cidr_notation: /29
