@@ -152,6 +152,7 @@ export const Home: FC<{}> = () => {
         setTimer(_timer)
         if (_timer === 0) {
           closeModal('download-modal')
+          setDisableDownload(false)
         } else {
           setTimeout(() => {
             --_timer
