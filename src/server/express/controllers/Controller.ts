@@ -3,15 +3,10 @@ import { NextFunction, Request, Response, Router } from 'express';
 import getLog from '../../../utils/log';
 import HttpError from '../HttpError';
 import { youtube } from 'scrape-youtube';
-//import ffmpeg from 'fluent-ffmpeg';
 import exec from 'executive'
 import fs from 'fs';
 
 const PWD = process.env.PWD;
-
-//ffmpeg.setFfmpegPath('/usr/bin/ffmpeg');
-//ffmpeg.setFfmpegPath('/usr/local/bin/ffmpeg');
-
 const log = getLog(__filename);
 const router: Router = Router();
 
