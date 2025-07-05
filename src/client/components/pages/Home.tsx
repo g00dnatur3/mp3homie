@@ -5,7 +5,7 @@ import {search, getDownloadUrl, getDownloadVideoUrl} from '../../helpers/ApiHelp
 import format from 'format-duration';
 // import Websocket from 'react-websocket';
 import SearchBar from '../core/SearchBar';
-// import Modal from '../core/Modal';
+import Modal from '../core/Modal';
 import {openModal, closeModal} from '../../event'
 import Grid from '@material-ui/core/Grid';
 import qs from 'query-string'
@@ -15,15 +15,15 @@ smoothscroll.polyfill();
 
 const style = new BaseStyle();
 
-// const isSafariAndIOS = () => {
-//   var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
-//   var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-//   if (isSafari && iOS) {
-//       return true
-//   } else {
-//       return false
-//   }
-// }
+const isSafariAndIOS = () => {
+  var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+  var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  if (isSafari && iOS) {
+      return true
+  } else {
+      return false
+  }
+}
 
 // tslint:disable-next-line: variable-name
 export const Home: FC<{}> = () => {
@@ -65,7 +65,7 @@ export const Home: FC<{}> = () => {
   }
 
   useEffect(() => {
-    //console.log('GOT HERE - useEffect')
+    console.log('GOT HERE - useEffect')
     const handleResize = () => setDimensions({
         height: window.innerHeight,
         width: window.innerWidth
@@ -391,7 +391,7 @@ export const Home: FC<{}> = () => {
       } />
     </div> */}
 
-    {/* <Modal id="download-modal" style={{width: '80%', maxWidth: '20rem', ...style.centerColumn}}>
+    <Modal id="download-modal" style={{width: '80%', maxWidth: '20rem', ...style.centerColumn}}>
         {spinner}
         <div style={{paddingBottom: '0.6rem'}}>fetching from youtube 🎵</div>
         {!isSafariAndIOS()
@@ -400,7 +400,7 @@ export const Home: FC<{}> = () => {
             </div>
           : null
         }
-    </Modal> */}
+    </Modal>
 
     {/* <Modal id="main-modal" style={{width: '80%', maxWidth: '20rem', ...style.centerColumn}}>
         {spinner}
